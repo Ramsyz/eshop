@@ -1,11 +1,45 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider,
+  ScrollRestoration,
+} from "react-router-dom";
+
+const Layout = () => {
+  return (
+    <div>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <div className="font-bodyFont">
-      <Navbar />
-      <Home />
+      <RouterProvider router={router} />
     </div>
   );
 }

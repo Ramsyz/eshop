@@ -2,7 +2,7 @@ import { cartImg, basketImg, logoDark } from "../assets/index";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[98px] bg-white border-b-[1px] border-gray-200 font-titleFont">
+    <div className="w-full h-[98px] bg-white border-b-[1px] border-gray-200 font-titleFont sticky top-0 z-10">
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between">
         <div>
           <img className="w-28" src={logoDark} alt="logoDark" />
