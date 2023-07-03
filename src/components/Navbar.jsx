@@ -4,7 +4,6 @@ import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const productData = useSelector((state) => state.eshop.productData);
-  console.log(productData);
   return (
     <div className="w-full h-[98px] bg-white border-b-[1px] border-gray-200 font-titleFont sticky top-0 z-10">
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between">
