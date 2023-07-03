@@ -12,9 +12,9 @@ const Products = ({ products }) => {
         <p className="max-w-[700px] text-gray-600 text-center ">
           eshop is an online platform with over 1000 products and over a 100
           brands in our catalogue you will find everything you are looking for.
-          Right from Sweatshirts, T-Shirts, Shirts, and Jackets. Choose from a
-          wide range of options in every category, exclusively handpicked to
-          help you find the best quality available at the lowest prices.
+          Right from Clothing, Jewelery and Electronics. Choose from a wide
+          range of options in every category, exclusively handpicked to help you
+          find the best quality available at the lowest prices.
         </p>
       </div>
       <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10">
