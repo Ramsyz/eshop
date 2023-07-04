@@ -12,8 +12,8 @@ const Navbar = () => {
             <img className="w-28" src={logoDark} alt="logoDark" />
           </div>
         </Link>
-        <div className="flex items-center gap-8">
-          <ul className="flex items-center gap-8">
+        <div className="flex items-center gap-8 px-4">
+          <ul className="hidden lg:flex items-center gap-8">
             <li className="text-base font-bold hover:text-indigo-400 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
               Home
             </li>
@@ -35,7 +35,9 @@ const Navbar = () => {
               </span>
             </div>
           </Link>
-          <img className="w-8 h-8" src={basketImg} alt="basketImg" />
+          <Link to="/login">
+            <img className="w-8 h-8" src={basketImg} alt="basketImg" />
+          </Link>
         </div>
       </div>
     </div>

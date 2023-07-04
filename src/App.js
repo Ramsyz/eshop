@@ -2,6 +2,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Login from "./pages/Login";
 import {
   createBrowserRouter,
   Outlet,
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },

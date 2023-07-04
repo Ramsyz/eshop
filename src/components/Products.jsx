@@ -17,7 +17,7 @@ const Products = ({ products }) => {
           find the best quality available at the lowest prices.
         </p>
       </div>
-      <div className="max-w-screen-xl mx-auto py-10 grid grid-cols-4 gap-10">
+      <div className="max-w-screen-xl mx-auto py-10 lg:grid grid-cols-4 gap-10 ">
         {products.map((item) => (
           <ProductsCard key={item._id} product={item} />
         ))}

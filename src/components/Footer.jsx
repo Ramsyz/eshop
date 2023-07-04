@@ -6,8 +6,8 @@ import { CgTrack } from "react-icons/cg";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-[#949494] py-20 font-titleFont">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-4">
+    <div className="bg-black text-[#949494] py-20 px-10 font-titleFont">
+      <div className="max-w-screen-xl mx-auto lg:grid grid-cols-4">
         {/* logoIcon  */}
         <div className="flex flex-col gap-4">
           <img className="w-[96px]" src={logoLight} alt="logoLight" />
